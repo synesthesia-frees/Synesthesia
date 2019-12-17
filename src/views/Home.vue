@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <ChannelsContainer />
+    <StreamContainer />
     <div class="separator"></div>
     <PreviewContainer />
   </div>
@@ -8,13 +8,13 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import ChannelsContainer from '@/components/ChannelsContainer.vue'
+import StreamContainer from '@/components/stream/Container.vue'
 import PreviewContainer from '@/components/preview/Container.vue'
 
 export default Vue.extend({
-  name: 'home',
+  name: 'HomeView',
   components: {
-    ChannelsContainer,
+    StreamContainer,
     PreviewContainer
   }
 })
