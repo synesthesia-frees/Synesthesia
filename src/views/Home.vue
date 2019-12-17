@@ -30,7 +30,7 @@ export default Vue.extend({
 
 .separator {
   height: 0;
-  width: 95%;
+  width: 100%;
   margin: auto;
   border: solid 1px $background-lighter
 }

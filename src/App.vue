@@ -40,5 +40,6 @@ export default Vue.extend({
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: auto;
+  padding: 0 3%
 }
 </style>
