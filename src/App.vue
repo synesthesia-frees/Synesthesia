@@ -1,32 +1,44 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div class="header-container">
+      <Toolbar />
     </div>
-    <router-view/>
+    <div class="content-container">
+      <router-view />
+    </div>
   </div>
 </template>
 
+<script lang="ts">
+import Vue from 'vue'
+import Toolbar from '@/components/Toolbar.vue'
+
+export default Vue.extend({
+  name: 'App',
+  components: {
+    Toolbar
+  }
+})
+</script>
+
 <style lang="scss">
+@import url('./styles/app.scss');
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  background-color: $background;
 }
 
-#nav {
-  padding: 30px;
+.header-container {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+.content-container {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
 }
 </style>

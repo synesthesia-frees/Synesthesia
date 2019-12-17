@@ -1,18 +1,37 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <ChannelsContainer />
+    <div class="separator"></div>
+    <PreviewContainer />
   </div>
 </template>
 
-<script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+<script lang="ts">
+import Vue from 'vue'
+import ChannelsContainer from '@/components/ChannelsContainer.vue'
+import PreviewContainer from '@/components/preview/Container.vue'
 
-export default {
+export default Vue.extend({
   name: 'home',
   components: {
-    HelloWorld
+    ChannelsContainer,
+    PreviewContainer
   }
-}
+})
 </script>
+
+<style lang="scss" scoped>
+.home {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.separator {
+  height: 0;
+  width: 95%;
+  margin: auto;
+  border: solid 1px $background-lighter
+}
+</style>
