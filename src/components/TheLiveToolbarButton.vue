@@ -1,5 +1,5 @@
 <template>
-	<a @click="callback" class="toolbar-button">
+	<a @click="callback" :class="`toolbar-button ${active ? 'active' : ''}`">
 		<p>{{ title }}</p>
 	</a>
 </template>
@@ -18,10 +18,10 @@ export default Vue.extend({
 			type: Function,
 			required: true
 		},
-		enabled: {
+		active: {
 			type: Boolean,
 			required: false,
-			default: true
+			default: false
 		}
 	}
 })
@@ -29,12 +29,19 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 .toolbar-button {
+	background-color: $background-lighter;
 	color: $text;
 	cursor: pointer;
 	padding: 0 5%;
 	transition: .2s linear;
-
+	text-align: center;
+	white-space: nowrap;
 }
+
+.active {
+	color: $primary
+}
+
 .toolbar-button:hover {
 	background-color: $background
 }
