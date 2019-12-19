@@ -67,7 +67,7 @@ export default Vue.extend({
 			const computedStyle = getComputedStyle(beforeEl, "");
 			if (this.orientation === ORIENTATION_VERTICAL) {
 				beforeEl.style.width =
-					parseInt(computedStyle.width as string) + tmp + "px";
+					parseInt(computedStyle.width as string) - tmp + "px";
 			} else {
 				beforeEl.style.height =
 					parseInt(computedStyle.height as string) - tmp + "px";
