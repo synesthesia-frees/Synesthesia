@@ -1,6 +1,5 @@
 <template>
 	<div>
-		left: 0; right: 0
 	</div>
 </template>
 

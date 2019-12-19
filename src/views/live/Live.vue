@@ -40,7 +40,9 @@ export default Vue.extend({
 .stream-container {
   display: flex;
   align-items: stretch;
-  height: 30%
+  height: 30%;
+  min-height: 20%;
+  max-height: 30%;
 }
 
 .preview-container {

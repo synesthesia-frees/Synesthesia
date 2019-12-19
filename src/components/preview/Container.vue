@@ -1,6 +1,6 @@
 <template>
 	<div class="preview">
-		<h2>Preview</h2>
+		<h2 class="unselectable">Preview</h2>
 	</div>
 </template>
 
