@@ -1,7 +1,5 @@
 <template>
-	<div class="live">
-		<div class="header-container">
-		</div>
+	<div class="configure">
 		<div class="content-container">
 			<router-view />
 		</div>
@@ -12,23 +10,27 @@
 import Vue from 'vue'
 
 export default Vue.extend({
-	name: 'LiveLayoutView',
-	components: {
+	name: 'ConfigureLayoutView',
+	data () {
+		return {
+			configurations: [
+				{
+					title: 'Server',
+					onClick: () => {
+						console.log('ytess')
+					}
+				}
+			]
+		}
 	}
 })
 </script>
 
 <style lang="scss" scoped>
-.live {
+.configure {
   display: flex;
   flex-flow: column;
 	flex: 1;
-}
-
-.header-container {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
 }
 
 .content-container {

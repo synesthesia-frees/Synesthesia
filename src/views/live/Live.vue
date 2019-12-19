@@ -33,7 +33,7 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 .home {
-  height: 100%;
+  margin: 0;
   width: 100%;
 }
 
@@ -48,6 +48,5 @@ export default Vue.extend({
 .preview-container {
   display: flex;
   align-items: stretch;
-  height: 70%
 }
 </style>
