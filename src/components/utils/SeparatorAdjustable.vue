@@ -101,6 +101,7 @@ export default Vue.extend({
 
 		> .inner {
       width: 5px;
+			height: 100%;;
 			border-left: solid 1px $background-lighter;
 		}
 	}

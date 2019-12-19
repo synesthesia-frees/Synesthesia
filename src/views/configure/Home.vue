@@ -1,6 +1,7 @@
 <template>
 	<div class="home">
 		<ConfigurationCategory title="Server" :onClick="onGoToConfigServer"/>
+		<ConfigurationCategory title="Scene" :onClick="onGoToConfigScene"/>
 	</div>
 </template>
 
@@ -17,6 +18,11 @@ export default Vue.extend({
 		onGoToConfigServer () {
 			this.$router.push({
 				name: 'config_server'
+			})
+		},
+		onGoToConfigScene () {
+			this.$router.push({
+				name: 'config_scene'
 			})
 		}
 	}

@@ -11,18 +11,6 @@ import Vue from 'vue'
 
 export default Vue.extend({
 	name: 'ConfigureLayoutView',
-	data () {
-		return {
-			configurations: [
-				{
-					title: 'Server',
-					onClick: () => {
-						console.log('ytess')
-					}
-				}
-			]
-		}
-	}
 })
 </script>
 

@@ -36,6 +36,7 @@ export default Vue.extend({
 <style lang="scss" scoped>
 .button-size-wrapper {
 	width: 33%;
+	padding: 5px;
 	cursor: pointer;
 	>.button-aspect-ratio-wrapper {
 		width: 100%;

@@ -20,7 +20,6 @@ export default Vue.extend({
 	},
 	computed: {
 		category () {
-			console.log(this.$route)
 			return this.$route.meta.category
 		}
 	},

@@ -14,6 +14,10 @@ export default Vue.extend({
 			this.$router.push({
 				name: 'setup'
 			})
+		} else {
+			this.$router.push({
+				name: 'live'
+			})
 		}
 	}
 })
