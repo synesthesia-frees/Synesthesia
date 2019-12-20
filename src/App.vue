@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <TheToolbar />
+    <div class="the-toolbar-container">
+      <TheToolbar />
+    </div>
     <router-view />
   </div>
 </template>
@@ -28,6 +30,11 @@ export default Vue.extend({
   display: flex;
   flex-direction: column;
   align-items: stretch;
+}
+
+.the-toolbar-container {
+  width: 100vw;
+  margin-bottom: 1%;
 }
 
 </style>

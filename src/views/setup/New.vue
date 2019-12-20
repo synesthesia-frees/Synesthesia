@@ -1,6 +1,6 @@
 <template>
-	<div class="setup">
-		<router-view />
+	<div class="setup-new">
+
 	</div>
 </template>
 
@@ -8,14 +8,12 @@
 import Vue from 'vue'
 
 export default Vue.extend({
-	name: 'SetupLayoutView'
+	name: 'SetupNewView'
 })
 </script>
 
 <style lang="scss" scoped>
-.setup {
-  display: flex;
-  flex-flow: column;
-	flex: 1;
+.setup-new {
+	flex: 1
 }
 </style>

@@ -1,6 +1,5 @@
 <template>
-	<div class="setup">
-		<router-view />
+	<div class="elements-list">
 	</div>
 </template>
 
@@ -8,14 +7,15 @@
 import Vue from 'vue'
 
 export default Vue.extend({
-	name: 'SetupLayoutView'
+	name: 'SceneElementsList'
 })
 </script>
 
 <style lang="scss" scoped>
-.setup {
-  display: flex;
-  flex-flow: column;
+.elements-list {
 	flex: 1;
+	display: flex;
+	align-items: stretch;
+	flex-direction: column;
 }
 </style>

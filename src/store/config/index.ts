@@ -1,9 +1,23 @@
-import {Module, VuexModule, Mutation, Action} from 'vuex-module-decorators'
+import { Module } from 'vuex';
 
-/**
- * Represents the instance config
- */
-@Module
-export default class Config extends VuexModule {
-	loaded = true
+import { RootState, ConfigState } from '@/types/state'
+
+import actions from './actions'
+import getters from './getters'
+import mutations from './mutations'
+
+export const state: ConfigState = {
+	loaded: false,
+	serverUrl: '',
+	scene: null
 }
+
+const module: Module<ConfigState, RootState> = {
+	namespaced: true,
+	state,
+	actions,
+	getters,
+	mutations
+}
+
+export default module
