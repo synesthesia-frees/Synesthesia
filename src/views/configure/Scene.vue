@@ -2,6 +2,7 @@
 	<div class="scene">
 		<div ref="topContainer" class="top-container">
 			<div ref="canvasContainer" class="canvas-container">
+				<SceneCanvas />
 			</div>
 			<div class="separator-container">
 				<SeparatorAdjustable orientation="vertical" :beforeElement="getCanvasContainer"/>
@@ -18,12 +19,15 @@
 
 <script lang="ts">
 import Vue from 'vue'
+
 import SeparatorAdjustable from '@/components/utils/SeparatorAdjustable.vue'
+import SceneCanvas from '@/components/scene/Canvas.vue'
 
 export default Vue.extend({
 	name: 'ConfigureSceneView',
 	components: {
-		SeparatorAdjustable
+		SeparatorAdjustable,
+		SceneCanvas
 	},
 	methods: {
 		getTopContainer () {

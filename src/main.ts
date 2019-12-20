@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import * as VueGL from "vue-gl";
 import App from './App.vue'
 import router from './router'
 import store from './store'
