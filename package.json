@@ -10,7 +10,7 @@
   "dependencies": {
     "@types/webgl2": "0.0.5",
     "core-js": "^3.4.3",
-    "three": "^0.111.0",
+    "three": "^0.125.0",
     "vue": "^2.6.11",
     "vue-class-component": "^7.0.2",
     "vue-gl": "^0.18.0",
